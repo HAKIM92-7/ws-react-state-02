@@ -44,14 +44,16 @@ this.setState({count : this.state.count -1});
 
     render() {
         return (
-            <div>
+            <div style={{marginTop:"50px"}}>
 
                 
 
                 
-                <h1>{this.props.title}</h1>
+                <h1 style={{marginBottom : "30px"}}>{this.props.title}</h1>
+
+                <div style={{marginBottom:"30px"}}>
                 <button type="button" className="btn btn-success" style={{width:"50px" }} onClick={
-                
+            
                 ()=> this.increment()
 
 
@@ -64,7 +66,8 @@ this.setState({count : this.state.count -1});
 
 
 
-                } >-</button> <br/>
+                } >-</button> 
+                </div><br/>
 
                <input type="text"  onChange={(e) => {
                    
